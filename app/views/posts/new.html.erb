@@ -1,0 +1,15 @@
+<h1>Создане поста</h1>
+
+<%= form_for :post, url: posts_path do |f| %>
+  <p>
+    Name <br>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    Content <br>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
